@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+}
+.calculator {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.display {
+    width: 95%;
+    padding: 15px;
+    font-size: 1.8em;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+/* button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+.buttons button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.buttons button:hover {
+    background: #d1d8e0;
+}
+.history {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 0.9em;
+    display: none;
+}
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px; 
+}
+.delete-btn:hover {
+    background-color: darkred;
+}
+.clear-history-btn {
+    background-color: #ff7043;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.clear-history-btn:hover {
+    background-color: #ff5722;
+}
